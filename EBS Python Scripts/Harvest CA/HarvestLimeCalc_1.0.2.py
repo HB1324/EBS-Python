@@ -129,7 +129,7 @@ window.title("Harvest Lime Calculator")
 # -- Create input labels and entry widgets --
 
 # Version Label
-label_version = tk.Label(window, text="Version: 1.0.1")
+label_version = tk.Label(window, text="Version: 1.0.2")
 label_version.grid(row=4, column=0, padx=5, pady=5)
 
 # Variety
