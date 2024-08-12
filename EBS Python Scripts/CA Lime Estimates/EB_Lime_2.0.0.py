@@ -53,7 +53,7 @@ def calculate_lime_pallets(calculation_factor, bin_count, variety):
 
     lime_lbs = lime_factor * bin_count
     lime_packs = lime_lbs / 50
-    lime_pallets = lime_packs / 42
+    lime_pallets = lime_packs / 45
     return lime_packs, lime_pallets
 
 #------------------------------------------------------------------------------------------------------------
@@ -204,5 +204,9 @@ Version 2.0.0 = Redesigned by Wenatchee
 Date: 08/12/2024
 DEV: Hunter Brown
 Entry: Hard Coded Calculation Factors to be the same
+-------------------------------------------------------------------------------
+Date: 08/12/2024
+DEV: Hunter Brown
+Entry: Changed pallet size to 45 bags per pallet
 -------------------------------------------------------------------------------
 '''
