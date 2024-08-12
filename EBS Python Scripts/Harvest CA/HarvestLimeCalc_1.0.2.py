@@ -190,7 +190,7 @@ Entry: Finalized program, Added Notation for easy editing
 -------------------------------------------------------------------------------
 Date: 08/12/2024
 DEV: Hunter Brown
-Entry: Modified Calculation Function for Wes's Google Sheet Division Factors
+Entry: Modified Calculation Function for Wes's Google Sheet Division Factor
 >>>   (7 / Pallet) --> (44 / Pallet)   <<<
 -------------------------------------------------------------------------------
 '''
