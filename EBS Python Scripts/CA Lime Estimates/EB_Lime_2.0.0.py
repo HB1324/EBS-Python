@@ -20,11 +20,11 @@ from tkinter import messagebox
 # -- Lime Calculation Factors --
 # With Lime Scrubber (y)
 lime_calculation_factor_y = {
-    'gala': 5.5, 'honeycrisp': 22, 'organic_honeycrisp': 22,
-    'red': 6.6, 'organic_red': 6.6, 'organic_golden': 6.6,
-    'golden': 6.6, 'grannysmith': 5.5, 'organic_grannysmith': 5.5,
-    'fuji': 5.5, 'organic_fuji': 5.5, 'pink_lady': 5.5,
-    'organic_pink_lady': 5.5, 'frozen_pink_lady': 10.5,
+    'gala': 15.4, 'honeycrisp': 55, 'organic_honeycrisp': 55,
+    'red': 15.4, 'organic_red': 15.4, 'organic_golden': 22,
+    'golden': 22, 'grannysmith': 15.4, 'organic_grannysmith': 15.4,
+    'fuji': 15.4, 'organic_fuji': 15.4, 'pink_lady': 15.4,
+    'organic_pink_lady': 15.4, 'frozen_pink_lady': 33,
 }
 
 # Without Lime Scrubber (n)
@@ -114,8 +114,8 @@ def helpbin():
 # Help Calculation Factor
 def helpfact():
     messagebox.showinfo(title="Calculation Factor",
-                        message="WITH Lime Scrubbers: ( y )\n"
-                                "WITHOUT Lime Scrubbers: ( n )")
+                        message="Version: 2.0.0 is Programmed to produce same output\n"
+                                "( y or n ) Does not matter")
 
 
 #------------------------------------------------------------------------------------------------------------
@@ -141,7 +141,7 @@ label_bin_count = tk.Label(window, text="Bin Count of CA:")
 entry_bin_count = tk.Entry(window)
 
 # Calculation Factor
-label_calc_factor = tk.Label(window, text="Using Lime Scrub? ( y / n ):")
+label_calc_factor = tk.Label(window, text="Using Lime Scrub? ( y ):")
 entry_calc_factor = tk.Entry(window)
 
 # Create Buttons
@@ -200,5 +200,9 @@ Entry: Changed Name and Version Classification (1.0.2 --> 2.0.0)
 New Name: EB_Lime_2.0.0
 Version 1.0.0 = Designed by HB
 Version 2.0.0 = Redesigned by Wenatchee
+-------------------------------------------------------------------------------
+Date: 08/12/2024
+DEV: Hunter Brown
+Entry: Hard Coded Calculation Factors to be the same
 -------------------------------------------------------------------------------
 '''
