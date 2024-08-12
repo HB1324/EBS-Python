@@ -2,7 +2,7 @@
 Program Title: Harvest Lime Calculator
 Program Version: (Found in tk labels)
 Author: Hunter Brown
-Date Created: (08/12/2024)
+Date Created: (08/01/2024)
 Last Modified: (08/12/2024)
 Description: Dehydrated Lime Pack Estimations for CA Environments
 Dependencies: Python 3.12.5
@@ -53,7 +53,7 @@ def calculate_lime_pallets(calculation_factor, bin_count, variety):
 
     lime_lbs = lime_factor * bin_count
     lime_packs = lime_lbs / 50
-    lime_pallets = lime_packs / 42
+    lime_pallets = lime_packs / 7
     return lime_packs, lime_pallets
 
 #------------------------------------------------------------------------------------------------------------
@@ -129,7 +129,7 @@ window.title("Harvest Lime Calculator")
 # -- Create input labels and entry widgets --
 
 # Version Label
-label_version = tk.Label(window, text="Version: 1.0.2")
+label_version = tk.Label(window, text="Version: 1.0.1")
 label_version.grid(row=4, column=0, padx=5, pady=5)
 
 # Variety
@@ -190,7 +190,11 @@ Entry: Finalized program, Added Notation for easy editing
 -------------------------------------------------------------------------------
 Date: 08/12/2024
 DEV: Hunter Brown
-Entry: Modified Calculation Function for Wes's Google Sheet Division Factor
->>>   (7 / Pallet) --> (44 / Pallet)   <<<
+Entry: Changed Name and Version Classification (1.0.2 --> 2.0.0)
+
+New Name: EB_Lime_2.0.0
+Version 1.0.0 = Designed by HB
+Version 2.0.0 = Redesigned by Wenatchee
 -------------------------------------------------------------------------------
+
 '''
