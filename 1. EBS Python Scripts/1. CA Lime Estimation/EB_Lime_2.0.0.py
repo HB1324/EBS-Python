@@ -20,20 +20,20 @@ from tkinter import messagebox
 # -- Lime Calculation Factors --
 # With Lime Scrubber (y)
 lime_calculation_factor_y = {
-    'gala': 15.4, 'honeycrisp': 55, 'organic_honeycrisp': 55,
-    'red': 15.4, 'organic_red': 15.4, 'organic_golden': 22,
-    'golden': 22, 'grannysmith': 15.4, 'organic_grannysmith': 15.4,
-    'fuji': 15.4, 'organic_fuji': 15.4, 'pink_lady': 15.4,
-    'organic_pink_lady': 15.4, 'frozen_pink_lady': 33,
+    'gala': 15.4, 'honeycrisp': 55, 'orga_honeycrisp': 55,
+    'red': 15.4, 'orga_red': 15.4, 'orga_golden': 22,
+    'golden': 22, 'grannysmith': 15.4, 'orga_grannysmith': 15.4,
+    'fuji': 15.4, 'orga_fuji': 15.4, 'pink_lady': 15.4,
+    'orga_pink_lady': 15.4, 'frozen_pink_lady': 33,
 }
 
 # Without Lime Scrubber (n)
 lime_calculation_factor_n = {
-    'gala': 15.4, 'honeycrisp': 55, 'organic_honeycrisp': 55,
-    'red': 15.4, 'organic_red': 15.4, 'organic_golden': 22,
-    'golden': 22, 'grannysmith': 15.4, 'organic_grannysmith': 15.4,
-    'fuji': 15.4, 'organic_fuji': 15.4, 'pink_lady': 15.4,
-    'organic_pink_lady': 15.4, 'frozen_pink_lady': 33,
+    'gala': 15.4, 'honeycrisp': 55, 'orga_honeycrisp': 55,
+    'red': 15.4, 'orga_red': 15.4, 'orga_golden': 22,
+    'golden': 22, 'grannysmith': 15.4, 'orga_grannysmith': 15.4,
+    'fuji': 15.4, 'orga_fuji': 15.4, 'pink_lady': 15.4,
+    'orga_pink_lady': 15.4, 'frozen_pink_lady': 33,
 }
 
 #------------------------------------------------------------------------------------------------------------
@@ -89,19 +89,19 @@ def calculate():
 def helpvar():
     messagebox.showinfo(title="Fruit Variety",
                         message="Entries are Case Sensitive\n\n"
-                                "gala\n"
+                                "gala (For both orga & conv)\n"
                                 "honeycrisp\n"
-                                "organic_honeycrisp\n"
+                                "orga_honeycrisp\n"
                                 "red\n"
-                                "organic_red\n"
+                                "orga_red\n"
                                 "golden\n"
-                                "organic_golden\n"
+                                "orga_golden\n"
                                 "grannysmith\n"
-                                "organic_grannysmith\n"
+                                "orga_grannysmith\n"
                                 "fuji\n"
-                                "organic_fuji\n"
+                                "orga_fuji\n"
                                 "pink_lady\n"
-                                "organic_pink_lady\n"
+                                "orga_pink_lady\n"
                                 "frozen_pink_lady")
 
 
