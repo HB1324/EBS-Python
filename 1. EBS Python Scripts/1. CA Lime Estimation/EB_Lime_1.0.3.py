@@ -73,7 +73,7 @@ def calculate():
             # Result Output Message
             messagebox.showinfo("CA Lime Requirements",
                                 f"Pallets Required: {lime_pallets:.2f}\n"
-                                f"Total Bags Needed: {lime_packs * 7}")
+                                f"Total Bags Needed: {lime_packs:.2f}")
         # Syntax Error
         else:
             messagebox.showerror("Error", "Invalid fruit variety or calculation factor.")
