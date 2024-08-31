@@ -52,8 +52,8 @@ def calculate_lime_pallets(calculation_factor, bin_count, variety):
         return None, None
 
     lime_lbs = lime_factor * bin_count
-    lime_packs = lime_lbs / 50
-    lime_pallets = lime_packs / 7
+    lime_packs = round(lime_lbs / 50, 2)
+    lime_pallets = round(lime_packs / 7, 2)
     return lime_packs, lime_pallets
 
 #------------------------------------------------------------------------------------------------------------
