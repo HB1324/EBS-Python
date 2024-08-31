@@ -195,7 +195,7 @@ Entry: Changed Name and Version Classification (1.0.2 --> 2.0.0)
 
 New Name: EB_Lime_2.0.0
 Version 1.0.0 = Designed by HB
-Version 2.0.0 = Redesigned by Wenatchee
+Version 2.0.0 = Redesigned for EBS Admins Calculations
 -------------------------------------------------------------------------------
 Date: 08/29/2024
 DEV: Hunter Brown
