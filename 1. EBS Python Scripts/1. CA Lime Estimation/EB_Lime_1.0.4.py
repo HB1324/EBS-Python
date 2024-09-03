@@ -116,10 +116,10 @@ def helpbin():
 
 # Show Calculation Data
 def showfact_y():
-    messagebox.showinfo(title="Factor (Y)", message=lime_calculation_factor_y)
+    messagebox.showinfo(title="Factor (Y): With Lime Scrubber", message=lime_calculation_factor_y)
 
 def showfact_n():
-    messagebox.showinfo(title="Factor (N)", message=lime_calculation_factor_n)
+    messagebox.showinfo(title="Factor (N): Without Lime Scrubber", message=lime_calculation_factor_n)
 #------------------------------------------------------------------------------------------------------------
 
 # -- Tkinter Window Assembler --
@@ -131,54 +131,52 @@ window.title("Harvest Lime Calculator")
 # -- Create input labels and entry widgets --
 
 # Version Label
-label_version = tk.Label(window, text="Version: 1.0.3")
-label_version.grid(row=3, column=0, columnspan=1, rowspan=2, padx=5, pady=5)
+label_version = tk.Label(window, text="--------------- Version: 1.0.4 ---------------")
+label_version.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
 
 # Variety
-label_variety = tk.Label(window, text="Fruit Variety:")
+label_variety = tk.Label(window, text="Fruit Variety --->")
 entry_variety = tk.Entry(window)
 
 # Bin Count
-label_bin_count = tk.Label(window, text="Bin Count of CA:")
+label_bin_count = tk.Label(window, text="Bin Count of CA --->")
 entry_bin_count = tk.Entry(window)
 
 # Calculation Factor
-label_calc_factor = tk.Label(window, text="Using Lime Scrub? ( y / n ):")
+label_calc_factor = tk.Label(window, text="Lime Scrub ( y / n ) --->")
 entry_calc_factor = tk.Entry(window)
-label_show_calc = tk.Label(window, text="Factors:")
+#label_show_calc = tk.Label(window, text="Factors:")
 
 # Create Buttons
 button_calculate = tk.Button(window, text="\n   Calculate   \n", command=calculate)
-button_helpvar = tk.Button(window, text="   VARIETY   ", command=helpvar)
-button_helpbin = tk.Button(window, text="   BIN COUNT   ", command=helpbin)
-button_showfact_y = tk.Button(window, text="   Factor (Y)   ", command=showfact_y)
-button_showfact_n = tk.Button(window, text="   Factor (N)   ", command=showfact_n)
+button_helpvar = tk.Button(window, text="  VARIETY --->  ", command=helpvar)
+button_helpbin = tk.Button(window, text="  BIN COUNT --->  ", command=helpbin)
+button_showfact_y = tk.Button(window, text="   Factor ( Y )   ", command=showfact_y)
+button_showfact_n = tk.Button(window, text="   Factor ( N )   ", command=showfact_n)
 
 
 # -- Label / Entry Grid Positions --
 
 #Variety
-label_variety.grid(row=0, column=0, padx=10, pady=5)
-entry_variety.grid(row=0, column=1, padx=10, pady=5)
-button_helpvar.grid(row=0, column=2, padx=2, pady=5)
+button_helpvar.grid(row=1, column=0, padx=10, pady=5)
+entry_variety.grid(row=1, column=1, padx=10, pady=5)
 
 # Bin Count
-label_bin_count.grid(row=1, column=0, padx=10, pady=5)
-entry_bin_count.grid(row=1, column=1, padx=10, pady=5)
-button_helpbin.grid(row=1, column=2, padx=2, pady=5)
+button_helpbin.grid(row=2, column=0, padx=10, pady=5)
+entry_bin_count.grid(row=2, column=1, padx=10, pady=5)
+
 
 # Calculation Factor
-label_calc_factor.grid(row=2, column=0, padx=10, pady=5)
-entry_calc_factor.grid(row=2, column=1, padx=10, pady=5)
+label_calc_factor.grid(row=3, column=0, padx=10, pady=5)
+entry_calc_factor.grid(row=3, column=1, padx=10, pady=5)
 
 
 # Calculation Function
-button_calculate.grid(row=3, column=1, rowspan=2, padx=10, pady=10)
+button_calculate.grid(row=4, column=1, rowspan=2, padx=5, pady=5)
 
 # Show Calculation Data
-button_showfact_y.grid(row=3, column=2, padx=10, pady=5)
-button_showfact_n.grid(row=4, column=2, padx=10, pady=5)
-label_show_calc.grid(row=2, column=2, padx=10, pady=5)
+button_showfact_y.grid(row=4, column=0, padx=10, pady=5)
+button_showfact_n.grid(row=5, column=0, padx=10, pady=5)
 
 # Run the Tkinter event loop
 window.mainloop()
