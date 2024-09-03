@@ -113,12 +113,13 @@ def helpbin():
 
 
 # Help Calculation Factor
-def helpfact():
-    messagebox.showinfo(title="Calculation Factor",
-                        message="WITH Lime Scrubbers: ( y )\n"
-                                "WITHOUT Lime Scrubbers: ( n )")
 
+# Show Calculation Data
+def showfact_y():
+    messagebox.showinfo(title="Factor (Y)", message=lime_calculation_factor_y)
 
+def showfact_n():
+    messagebox.showinfo(title="Factor (N)", message=lime_calculation_factor_n)
 #------------------------------------------------------------------------------------------------------------
 
 # -- Tkinter Window Assembler --
@@ -131,7 +132,7 @@ window.title("Harvest Lime Calculator")
 
 # Version Label
 label_version = tk.Label(window, text="Version: 1.0.3")
-label_version.grid(row=4, column=0, padx=5, pady=5)
+label_version.grid(row=3, column=0, columnspan=1, rowspan=2, padx=5, pady=5)
 
 # Variety
 label_variety = tk.Label(window, text="Fruit Variety:")
@@ -144,12 +145,15 @@ entry_bin_count = tk.Entry(window)
 # Calculation Factor
 label_calc_factor = tk.Label(window, text="Using Lime Scrub? ( y / n ):")
 entry_calc_factor = tk.Entry(window)
+label_show_calc = tk.Label(window, text="Factors: \/")
 
 # Create Buttons
-button_calculate = tk.Button(window, text="Calculate", command=calculate)
+button_calculate = tk.Button(window, text="\n   Calculate   \n", command=calculate)
 button_helpvar = tk.Button(window, text="   VARIETY   ", command=helpvar)
 button_helpbin = tk.Button(window, text="   BIN COUNT   ", command=helpbin)
-button_helpfact = tk.Button(window, text="   LIME FACTOR   ", command=helpfact)
+button_showfact_y = tk.Button(window, text="   Factor (Y)   ", command=showfact_y)
+button_showfact_n = tk.Button(window, text="   Factor (N)   ", command=showfact_n)
+
 
 # -- Label / Entry Grid Positions --
 
@@ -166,10 +170,15 @@ button_helpbin.grid(row=1, column=2, padx=2, pady=5)
 # Calculation Factor
 label_calc_factor.grid(row=2, column=0, padx=10, pady=5)
 entry_calc_factor.grid(row=2, column=1, padx=10, pady=5)
-button_helpfact.grid(row=2, column=2, padx=2, pady=5)
+
 
 # Calculation Function
-button_calculate.grid(row=4, column=1, padx=10, pady=10)
+button_calculate.grid(row=3, column=1, rowspan=2, padx=10, pady=10)
+
+# Show Calculation Data
+button_showfact_y.grid(row=3, column=2, padx=10, pady=5)
+button_showfact_n.grid(row=4, column=2, padx=10, pady=5)
+label_show_calc.grid(row=2, column=2, padx=10, pady=5)
 
 # Run the Tkinter event loop
 window.mainloop()
