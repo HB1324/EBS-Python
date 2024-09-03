@@ -145,7 +145,7 @@ entry_bin_count = tk.Entry(window)
 # Calculation Factor
 label_calc_factor = tk.Label(window, text="Using Lime Scrub? ( y / n ):")
 entry_calc_factor = tk.Entry(window)
-label_show_calc = tk.Label(window, text="Factors: \/")
+label_show_calc = tk.Label(window, text="Factors:")
 
 # Create Buttons
 button_calculate = tk.Button(window, text="\n   Calculate   \n", command=calculate)
