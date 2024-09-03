@@ -147,9 +147,9 @@ entry_calc_factor = tk.Entry(window)
 
 # Create Buttons
 button_calculate = tk.Button(window, text="Calculate", command=calculate)
-button_helpvar = tk.Button(window, text="   INFO   ", command=helpvar)
-button_helpbin = tk.Button(window, text="   INFO   ", command=helpbin)
-button_helpfact = tk.Button(window, text="   INFO   ", command=helpfact)
+button_helpvar = tk.Button(window, text="   VARIETY   ", command=helpvar)
+button_helpbin = tk.Button(window, text="   BIN COUNT   ", command=helpbin)
+button_helpfact = tk.Button(window, text="   LIME FACTOR   ", command=helpfact)
 
 # -- Label / Entry Grid Positions --
 
