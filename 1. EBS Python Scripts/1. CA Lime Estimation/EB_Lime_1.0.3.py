@@ -211,4 +211,8 @@ DEV: Hunter Brown
 Entry: Changed output message to display bag counts as well as pallet counts.
 Updated version from 1.0.2 --> 1.0.3
 -------------------------------------------------------------------------------
+Date: 09/03/2024
+DEV: Hunter Brown
+Entry: Updated App Configuration
+-------------------------------------------------------------------------------
 '''
