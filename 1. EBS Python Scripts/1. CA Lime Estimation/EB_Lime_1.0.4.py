@@ -76,10 +76,10 @@ def calculate():
                                 f"Total Bags Needed: {lime_packs:.2f}")
         # Syntax Error
         else:
-            messagebox.showerror("Error", "Invalid fruit variety or calculation factor.")
+            messagebox.showerror("Alphabetical Error Detected", "Invalid fruit variety or calculation factor.")
     # Numerical Error
     except ValueError:
-        messagebox.showerror("Error", "Please enter valid numerical values.")
+        messagebox.showerror("Numerical Error Detected", "Please enter valid numerical values.")
 
 
 #------------------------------------------------------------------------------------------------------------
