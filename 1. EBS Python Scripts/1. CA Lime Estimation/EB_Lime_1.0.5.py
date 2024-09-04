@@ -3,7 +3,7 @@ Program Title: Harvest Lime Calculator
 Program Version: (Found in tk labels)
 Author: Hunter Brown
 Date Created: (08/01/2024)
-Last Modified: (08/12/2024)
+Last Modified: (09/04/2024)
 Description: Dehydrated Lime Pack Estimations for CA Environments
 Dependencies: Python 3.12.5
 License: None
@@ -114,7 +114,11 @@ def helpbin():
                         message="Total # of bins stored in CA Room")
 
 
-# Help Calculation Factor
+# Help Lime Scrubber
+def helpscrub():
+    messagebox.showinfo(title="Lime Scrubber Method",
+                        message="(y or Y) = Using lime scrubber\n"
+                                "(n or N) = Not using lime scrubber")
 
 # Show Calculation Data
 def showfact_y():
@@ -128,12 +132,13 @@ def showfact_n():
 
 # -- Create Tkinter window --
 window = tk.Tk()
-window.title("Harvest Lime Calculator")
+window.title("CA Lime Estimator")
 
 # -- Create input labels and entry widgets --
 
 # Version Label
-label_version = tk.Label(window, text="--------------- Version: 1.0.4 ---------------")
+label_version = tk.Label(window, text="Earl Brown & Sons - CA Lime Estimator\n"
+                                      "-------------- Version: 1.0.4 --------------")
 label_version.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
 
 # Variety
@@ -145,16 +150,17 @@ label_bin_count = tk.Label(window, text="Bin Count of CA --->")
 entry_bin_count = tk.Entry(window)
 
 # Calculation Factor
-label_calc_factor = tk.Label(window, text="Lime Scrub ( y / n ) --->")
 entry_calc_factor = tk.Entry(window)
 #label_show_calc = tk.Label(window, text="Factors:")
 
 # Create Buttons
-button_calculate = tk.Button(window, text="\n   Calculate   \n", command=calculate)
+button_calculate = tk.Button(window, text="\n   CALCULATE   \n", command=calculate)
 button_helpvar = tk.Button(window, text="  FRUIT VARIETY --->  ", command=helpvar)
 button_helpbin = tk.Button(window, text="  CA BIN COUNT --->  ", command=helpbin)
-button_showfact_y = tk.Button(window, text="   Factor ( Y )   ", command=showfact_y)
-button_showfact_n = tk.Button(window, text="   Factor ( N )   ", command=showfact_n)
+button_help_scrub = tk.Button(window, text="CA LIME SCRUB --->", command=helpscrub)
+button_showfact_y = tk.Button(window, text="   FACTOR ( Y )   ", command=showfact_y)
+button_showfact_n = tk.Button(window, text="   FACTOR ( N )   ", command=showfact_n)
+
 
 
 # -- Label / Entry Grid Positions --
@@ -169,7 +175,7 @@ entry_bin_count.grid(row=2, column=1, padx=10, pady=5)
 
 
 # Calculation Factor
-label_calc_factor.grid(row=3, column=0, padx=10, pady=5)
+button_help_scrub.grid(row=3, column=0, padx=10, pady=5)
 entry_calc_factor.grid(row=3, column=1, padx=10, pady=5)
 
 
