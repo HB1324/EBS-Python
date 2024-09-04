@@ -82,8 +82,8 @@ def helpbin():
                         message="Total # of bins stored in CA Room")
 def helpscrub():
     messagebox.showinfo(title="Lime Scrubber Method",
-                        message="(y or Y) = Using lime scrubber\n"
-                                "(n or N) = Not using lime scrubber")
+                        message="( y or Y ) = Using lime scrubber\n"
+                                "( n or N ) = Not using lime scrubber")
 def showfact_y():
     messagebox.showinfo(title="Factor (Y): With Lime Scrubber", message=lime_calculation_factor_y)
 def showfact_n():
