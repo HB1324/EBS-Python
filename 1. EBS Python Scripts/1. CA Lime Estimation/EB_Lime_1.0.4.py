@@ -149,8 +149,8 @@ entry_calc_factor = tk.Entry(window)
 
 # Create Buttons
 button_calculate = tk.Button(window, text="\n   Calculate   \n", command=calculate)
-button_helpvar = tk.Button(window, text="  VARIETY --->  ", command=helpvar)
-button_helpbin = tk.Button(window, text="  BIN COUNT --->  ", command=helpbin)
+button_helpvar = tk.Button(window, text="  FRUIT VARIETY --->  ", command=helpvar)
+button_helpbin = tk.Button(window, text="  CA BIN COUNT --->  ", command=helpbin)
 button_showfact_y = tk.Button(window, text="   Factor ( Y )   ", command=showfact_y)
 button_showfact_n = tk.Button(window, text="   Factor ( N )   ", command=showfact_n)
 
