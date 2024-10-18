@@ -104,9 +104,27 @@ button_helpbin = tk.Button(window, text=" CA BIN COUNT --->  ", command=helpbin)
 button_help_scrub = tk.Button(window, text=" CA LIME SCRUB ---> ", command=helpscrub)
 button_showfact_y = tk.Button(window, text="   FACTOR ( Y )   ", command=showfact_y)
 button_showfact_n = tk.Button(window, text="   FACTOR ( N )   ", command=showfact_n)
+#----------------------------------------------------------------
+
+def update_factor_label(*args):
+    variety = entry_variety.get()
+    calc_factor = entry_calc_factor.get().lower()
+    if calc_factor == "y":
+        factor = lime_calculation_factor_y.get(variety, "N/A")
+    elif calc_factor == "n":
+        factor = lime_calculation_factor_n.get(variety, "N/A")
+    else:
+        factor = "N/A"
+    info_variety.config(text=f"Ratio:\n{factor} LBS per Bin")
+
+entry_variety.bind("<KeyRelease>", update_factor_label)
+entry_calc_factor.bind("<KeyRelease>", update_factor_label)
+info_variety = tk.Label(window, text="Factor: N/A")
+
 #------------------------------------------------------------------------------------------------------------
 button_helpvar.grid(row=1, column=0, padx=10, pady=5)
 entry_variety.grid(row=1, column=1, padx=10, pady=5)
+info_variety.grid(row=1, column=2, padx=10, pady=5)
 #----------------------------------------------------------------
 button_helpbin.grid(row=2, column=0, padx=10, pady=5)
 entry_bin_count.grid(row=2, column=1, padx=10, pady=5)
